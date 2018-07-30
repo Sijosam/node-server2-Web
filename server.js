@@ -67,6 +67,11 @@ app.get('/maintnce', (req,res) => {
   res.render('maintnce.hbs');
 });
 
+app.get('/projects', (req,res) => {
+  res.render('projects.hbs', {
+    project:'My blog Life'
+  });
+})
 
 
 app.listen(port, () => {
